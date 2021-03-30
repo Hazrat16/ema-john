@@ -24,7 +24,7 @@ const Review = () => {
         //cart
         const savedCart = getDatabaseCart();
         const productKeys = Object.keys(savedCart);
-        fetch('http://localhost:5000/productsByKeys',{
+        fetch('https://protected-spire-87187.herokuapp.com/productsByKeys',{
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
